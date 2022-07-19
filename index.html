@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,35 +9,35 @@
     <style>
         html,
         body {
-            height: 100%;
             margin: 0px;
             padding: 0px;
+
         }
 
-       
+            
+    </style>
+
     </style>
 </head>
 
 <body>
-    <div id="container">
-    </div>
+    <div id="_main_" style="height:100%">
 
+    </div>
     <script>
+        // TODO Add Reflexiv ... 
         (function(S)
         {
-
-            const h = document.createElement.bind(document)
-            var container = document.getElementById("container")
-
-            const cb = () =>
+            var main = document.getElementById("_main_")
+            var app = new S.app(
             {
-                var c = new S.container(a)
-                document.body.appendChild(c)
-            }
-            var a = new S.agent("data/quantangshi.tsv.gz",
-                "data/quantangshi.bin", cb)
+                "url": "./quantangshi.sidx"
+            })
+            main.append(app)
+
         })(sand)
     </script>
+
 </body>
 
 </html>
